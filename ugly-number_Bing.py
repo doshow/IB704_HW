@@ -11,10 +11,14 @@ def ugly_No(u_No):
         else:
             gogo=0
     
-    if (final_num ==1 or final_num ==-1):
+    if (final_num ==1):
         return True
     else:
         return False
 
 
-assert ugly_No(-15) is True, 'Fail'
+assert ugly_No(6) is True, 'Fail'
+assert ugly_No(8) is True, 'Fail'
+assert ugly_No(14) is False, 'Fail'
+assert ugly_No(-2147483648) is False, 'Fail'
+assert ugly_No(-1000) is False, 'Fail'
